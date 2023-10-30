@@ -1,8 +1,9 @@
-//     *
-//    **
-//   ***
-//  ****
-// *****
+// n=5
+//         *
+//       * * *
+//     * * * * *  
+//   * * * * * * *  
+// * * * * * * * * *  
 #include<iostream>
 using namespace std;
 int main(){
@@ -10,12 +11,12 @@ int main(){
   cout<<"Enter the number of rows: ";
   cin>>n;
   for(int row=1;row<=n;row++){
-    for(int col=n-1;col>=row;col--){
+    for(int col=n;col>row;col--){
       cout<<"  ";
     }
-    for(int star=1;star<=row;star++){
+    for(int col=1;col<=2*row-1;col++){
       cout<<"* ";
     }
     cout<<endl;
-}
+  }
 }
